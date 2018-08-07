@@ -1,0 +1,19 @@
+{
+  "name": "legends",
+  "version": "1.0.0",
+  "description": "We're doing it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truchi/legends.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/truchi/legends/issues"
+  },
+  "homepage": "https://github.com/truchi/legends#readme"
+}
