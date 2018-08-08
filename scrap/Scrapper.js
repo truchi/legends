@@ -125,7 +125,7 @@ class Scrapper {
 
     const exec = Scrapper.slugRe.exec(URL)
     data.slug  = exec[1]
-    data.img   = `https://www.legends-decks.com/img_cards/${ data.slug }.png`
+    data.img   = Scrapper.imgFn(data.slug)
 
     return data
   }
@@ -143,6 +143,7 @@ class Scrapper {
 }
 
 Scrapper.URLFn        = (page) => `https://www.legends-decks.com/cards/all/mana-up/${ page }/list`
+Scrapper.imgFn        = (slug) => `https://www.legends-decks.com/img_cards/${ slug }.png`
 Scrapper.attributesRe = /https:\/\/www\.legends-decks\.com\/interface\/(neutral|strength|intelligence|endurance|willpower|agility)\.png/
 Scrapper.slugRe       = /https:\/\/www\.legends-decks\.com\/card\/\d+\/([a-z]+)/
 
